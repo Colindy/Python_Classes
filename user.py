@@ -13,7 +13,10 @@ class User:
         print(f"{self.fname}'s ID number is {self.id}.")
 
     def dept(self):
-        print(f"{self.fname} works in the {self.department}.")
+        print(f"{self.fname} works in the {self.department} department.")
+
+    def greet(self):
+        print(f"Welcome {self.fname} {self.lname}!  Good to see you!") 
 
 """Now I have my class, let's make some users"""
 
@@ -24,5 +27,16 @@ user4 = User("Jeff", "Hardy", "489456", "High Flying Cool Brother")
 
 """Now let's do some stuff with our users"""
 
-
+user1.full_name()
+user1.dept()
+user1.greet()
+user2.full_name()
+user2.greet()
+user3.full_name()
+user3.who()
+user3.greet()
+user4.full_name()
+user4.who()
+user4.dept()
+user4.greet()
 

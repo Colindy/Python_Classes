@@ -41,11 +41,11 @@ user4 = User("Jeff", "Hardy", "489456", "High Flying Cool Brother")
 user1.full_name()
 user1.dept()
 user1.greet()
-print(user1.login_attempts)
+print(user1.login_attempts) # Print attempts here to verify the count
 user1.increment_login_attempts(1)
-print(user1.login_attempts)
+print(user1.login_attempts) # Print them here to verify the counter of 1
 user1.reset_login_attempts()
-print(user1.login_attempts)
+print(user1.login_attempts) # Print here again to verify that reset worked
 user2.full_name()
 user2.greet()
 user3.full_name()

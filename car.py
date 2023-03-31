@@ -30,6 +30,14 @@ class Car:
         """Adds the given amount to the odometer"""
         self.odometer += miles
 
+    def fill_gas_tank(self):
+        """
+        Gives an amount of gas to add to the car
+        Also gives us a handy way to show parent class method overwrite
+        """
+        print("We need to fill the gas tank!!")
+
+
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles"""
 
@@ -45,12 +53,18 @@ class ElectricCar(Car):
         """Print a statement describing the battery"""
         print(f"This car has a {self.battery_size}-kWh battery.")
 
+    def fill_gas_tank(self):
+        """We don't need gas for the electric car"""
+        print("We don't need no stinkin gas!!  It's electric!")
+
 
 my_tesla = ElectricCar('tesla', 'model s', 2019)
 my_new_car = Car('toyota', 'prius', '2012')
 my_used_car = Car('chevy', 's10', '1985')
 print(my_new_car.get_discriptive_name())
+my_new_car.fill_gas_tank()
 print(my_tesla.get_discriptive_name())
+my_tesla.fill_gas_tank()
 my_tesla.describe_battery()
 print("\n")
 #my_new_car.odometer = 23  # Here we edit the odometer reading directly by assigning it a new value

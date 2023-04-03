@@ -30,6 +30,7 @@ class IceCreamStand(Restaurant):
         self.flavor2 = flavor2
         self.flavor3 = flavor3
         self.name = name
+        self.cuisine = cuisine
 
     def list_flavors(self):
         print(f"We have {self.flavor1}, {self.flavor2}, and {self.flavor3}!")

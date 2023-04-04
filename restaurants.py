@@ -25,10 +25,10 @@ class Restaurant:
 
 class IceCreamStand(Restaurant):
     def __init__(self, name, cuisine):
-        super().__init__(name, cuisine, flavor1, flavor2, flavor3)
-        self.flavor1 = flavor1
-        self.flavor2 = flavor2
-        self.flavor3 = flavor3
+        super().__init__(name, cuisine)
+        self.flavor1 = "Vanilla"
+        self.flavor2 = "Chocolate"
+        self.flavor3 = "Cherry"
         self.name = name
         self.cuisine = cuisine
 
@@ -39,7 +39,7 @@ class IceCreamStand(Restaurant):
 fav_diner = Restaurant("Fogo De Chow", "Brazillian Steak House")
 fav2_diner = Restaurant("Spaghetti Factory", "Italian Pasta")
 fav3_diner = Restaurant("Chilli's", "Bar/Grill")
-fav_icecream = IceCreamStand("Ice Cream Palace", "Ice Cream", "Rocky Road", "Butterscotch", "Reese Cup")
+fav_icecream = IceCreamStand("Ice Cream Palace", "Ice Cream")
 
 print(f"My favorite place to eat is {fav_diner.name}.")
 print(f"{fav_diner.name} is a(n) {fav_diner.cuisine} type of diner.")

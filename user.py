@@ -29,12 +29,28 @@ class User:
         print(f"Your login attempts counter has been reset to {self.login_attempts}.")
 
 
+class Privileges:
+    def __init__(self, rights = "granted"):
+        self.rights = rights
+
+    def show_privileges(self):
+        if self.rights == "granted":
+            print("You have admin rights")
+        else:
+            print("You have not been granted rights")
+
+class Admin(User):
+    def __init__(self, fname, lname, id, department):
+        super().__init__(fname, lname, id, department)
+        self.privileges = Privileges()
+
 """Now I have my class, let's make some users"""
 
 user1 = User("Eric", "Bradshaw", "58648", "AzzKicking")
 user2 = User("Steve", "Austin", "316", "Rattlesnake")
 user3 = User("Stacy", "Keibler", "69696", "PinUp")
 user4 = User("Jeff", "Hardy", "489456", "High Flying Cool Brother")
+user5 = Admin("Ahska", "Unknown", "56813", "Boss")
 
 """
 Now let's do some stuff with our users
@@ -68,3 +84,7 @@ user4.who()
 user4.dept()
 user4.greet()
 
+"""Admin user"""
+print("\n")
+user5.full_name()
+user5.privileges.show_privileges()

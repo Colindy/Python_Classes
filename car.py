@@ -55,6 +55,13 @@ class Battery:
 
         print(f"This car can go about {range} miles on a full charge.")
 
+    def upgrade_battery(self):
+        """Look and see if the battery can be upgraded"""
+        if self.battery_size < 100:
+            self.battery_size = 100
+        else:
+            print("This battery does not need upgraded.")
+
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles"""
 
@@ -74,6 +81,8 @@ class ElectricCar(Car):
         """We don't need gas for the electric car"""
         print("We don't need no stinkin gas!!  It's electric!")
 
+    
+
 
 
 """
@@ -89,6 +98,13 @@ print(my_tesla.get_discriptive_name())
 my_tesla.fill_gas_tank()
 my_tesla.battery.describe_battery()  # Here we added 'battery' as part of the call
 my_tesla.battery.get_range()  # Here I'm using the 'battery' again after adding a new function to the class
+
+print("\n")
+"""Verifying that the battery upgrade worked as intended"""
+my_tesla.battery.describe_battery()  # Here I print out the battery description
+print("Let's check about an upgrade")
+my_tesla.battery.upgrade_battery()  # Run the upgrade module
+my_tesla.battery.describe_battery()  # Print again to verify the upgrade module worked
 
 print("\n")
 #my_new_car.odometer = 23  # Here we edit the odometer reading directly by assigning it a new value (commented out after edits)

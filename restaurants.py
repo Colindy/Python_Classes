@@ -36,6 +36,8 @@ class IceCreamStand(Restaurant):
         print(f"We have {self.flavor1}, {self.flavor2}, and {self.flavor3}!")
 
 
+# Commenting all this out to keep it from running in the new call file
+"""
 fav_diner = Restaurant("Fogo De Chow", "Brazillian Steak House")
 fav2_diner = Restaurant("Spaghetti Factory", "Italian Pasta")
 fav3_diner = Restaurant("Chilli's", "Bar/Grill")
@@ -57,5 +59,5 @@ fav3_diner.open()
 print("\n")
 fav_icecream.open()
 fav_icecream.list_flavors()
-
+"""
 

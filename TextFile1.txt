@@ -1,0 +1,24 @@
+To anyone and everyone that may one day read this.
+
+I embark, on this day, 21st of April in the year of our Lord, 2023.  I've ventured, thus far, into the basics
+of python, learning to print with ease, make compilations of items like lists, tuples, and dictonaries, to name
+but a few.
+
+I daresay it wildly adventerous to harken unto you that I have even been so blessed as to learn the art
+of the Class.  Inheritance, no less.  For mine is a mind of wonder, curiosity, and (dare I say) a bit of
+mischief.  For I, Colindy Telemnar, did so start this quest with the noble purpose of expanding upon my
+cyber security skills.
+
+I leave you now, reader.  On my quest to put my python skills to test in reading files.  It is for this
+reason that I graciously write to you.  Not so that you may read this, NAY!!  But to have a file with
+which to test my skills and sharpen my wit!  For on this day...
+
+I..
+
+WILL CODE.....
+
+IN PYTH0N!!!!!!!
+
+Truely,
+
+Colindy Telemnar 

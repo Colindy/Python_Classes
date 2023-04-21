@@ -7,6 +7,7 @@ while True:
     print(f"You rolled a {dice}!")
 
     if dice == 3:
+        print("You rolled a 3 and made it to the next room!")
         break
 
 while True:
@@ -14,6 +15,7 @@ while True:
     print(f"You rolled a {dice}!")
 
     if dice == 13:
+        print("You got a 13!!  Now, time for the lottery checker!")
         break
 
 my_ticket = 453167
@@ -27,7 +29,7 @@ while True:
     if winning_ticket != my_ticket:
         counter += 1
     else:
-        print(f"Your ticket was matched!  It only took {counter} times to get it!")
+        print(f"Your ticket, {my_ticket}, was matched!  It only took {counter} times to get it!")
         break
 
 

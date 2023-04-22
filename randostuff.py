@@ -32,6 +32,11 @@ while True:
         print(f"Your ticket, {my_ticket}, was matched!  It only took {counter} times to get it!")
         break
 
+players = ["Mark", "Luke", "Ashley", "Jade", "Harrison"]
+
+first_player = choice(players)
+
+print(f"First person this round is {first_player}!")
 
 """
 This one took a bit.  Had to move the counter outside of the loop because it kept kicking back

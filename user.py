@@ -31,5 +31,5 @@ class User:
 
 
 
-"""Now I have my class, let's make some users"""
+"""Now I have my class, let's make some users :)"""
 
